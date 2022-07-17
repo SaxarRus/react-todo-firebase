@@ -18,7 +18,7 @@ function App() {
         <div className="leftMenu">
           <ul className="leftMenuList">
             <li className="leftMenuListElem">
-              <Link className="leftMenuLink" to="/all">All tasks</Link>
+              <Link className="leftMenuLink" to="/all">Other tasks</Link>
             </li>
             {lists.map(item =>
               <li className="leftMenuListElem" key={item.id}>
@@ -27,7 +27,7 @@ function App() {
             )}
           </ul>
         </div>
-        <div className="tasks">
+        <div className="lists">
           <Routes>
             <Route path='/:listId' element={<TaskListContainer />} />
           </Routes>

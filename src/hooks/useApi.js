@@ -28,7 +28,7 @@ export default function useApi() {
     function updateTask(todoId, data){
         return api.updateTask(todoId, data)
             .then(data => {
-                setTodos([...todos.map(task => task.id !== todoId ? ({ ...task, ...data, }) : task)])
+                setTodos([...todos.map(task => task.id !== todoId ? ({ ...task, ...data }) : task)])
             })
     }
 

@@ -14,10 +14,11 @@ export default function TaskForm({ onSubmit }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input 
+        <form className="InputForm" onSubmit={handleSubmit} >
+            <input  
+            className="InputTask"
             type='text' 
-            placeholder='What ToDo...' 
+            placeholder=' What ToDo...' 
             value={title}
             onChange={handleChange}
             style={{width: '100%'}}
