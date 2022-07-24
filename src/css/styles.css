@@ -13,12 +13,16 @@ body {
   height: 100vh;
   width: 100vw; }
 
-.header h1 {
-  background-color: #107915;
-  color: white;
-  padding: .5rem;
-  padding-left: 1rem;
-  margin: 0; }
+.header {
+  background-color: #107915; }
+  .header h1 {
+    font-size: 24pt;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5rem;
+    padding-left: 1rem;
+    margin: 0; }
 
 .content {
   display: flex;
@@ -42,20 +46,25 @@ body {
   list-style-type: none; }
 
 .leftMenuLink {
-  text-decoration: none;
+  font-size: 13pt;
   color: black;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   display: flex;
-  padding: .25rem 1.5rem .25rem 1.5rem;
-  font-size: 13pt; }
-
-.leftMenuLink:hover {
-  background-color: white;
-  font-size: 13pt; }
-
-.leftMenuLink:focus {
-  background-color: #DCDCDC;
-  font-weight: bold;
-  font-size: 13pt; }
+  padding: .25rem 1.5rem .25rem 1.5rem; }
+  .leftMenuLink:hover {
+    font-size: 13pt;
+    color: black;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white; }
+  .leftMenuLink:focus {
+    font-size: 13pt;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DCDCDC; }
 
 .lists {
   display: flex;
@@ -65,7 +74,8 @@ body {
 .TaskListContainer {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; }
+  flex-grow: 1;
+  background-color: white; }
 
 .TaskList {
   padding: 0;
@@ -73,6 +83,9 @@ body {
 
 .TaskListTitle {
   font-size: 15pt;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
   padding: .5rem 1rem .5rem 1rem;
   margin: 0; }
 
@@ -81,18 +94,23 @@ body {
   margin: 0; }
 
 .Task {
+  font-size: 12pt;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   border: 1px solid white;
   padding: 0;
-  margin: 0;
-  font-size: 12pt; }
-
-.Task:hover {
-  border-top: 1px solid #e7e3e3;
-  border-bottom: 1px solid #e7e3e3;
-  font-size: 13pt; }
+  margin: 0; }
+  .Task:hover {
+    font-size: 13pt;
+    color: black;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #e7e3e3;
+    border-bottom: 1px solid #e7e3e3; }
 
 .ChckbxWrapper {
   cursor: pointer;
@@ -110,25 +128,24 @@ body {
 .ChckbxCustom {
   cursor: pointer;
   padding: .5rem 0 .5rem 0; }
-
-.ChckbxCustom::before {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid #adb5bd;
-  border-radius: 0.25em;
-  margin-right: 0.5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-  z-index: 0; }
+  .ChckbxCustom:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #DCDCDC;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    z-index: 0; }
 
 .Chckbx:checked ~ .ChckbxCustom::before {
-  border-color: #0b76ef;
-  background-color: #0b76ef;
+  border-color: #107915;
+  background-color: #107915;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
 .RmBtn {
@@ -146,18 +163,19 @@ body {
   margin: 0; }
 
 .InputTask {
+  font-size: 11pt;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid white;
   padding: .5rem 0 .5rem 0;
-  margin: 0;
-  font-size: 11pt; }
-
-.InputTask:hover {
-  border-top: 1px solid #e7e3e3;
-  border-bottom: 1px solid #e7e3e3; }
-
-.InputTask:focus {
-  border-top: 1px solid #e7e3e3;
-  border-bottom: 1px solid #e7e3e3;
-  outline: 0; }
+  margin: 0; }
+  .InputTask:hover {
+    border-top: 1px solid #e7e3e3;
+    border-bottom: 1px solid #e7e3e3; }
+  .InputTask:focus {
+    border-top: 1px solid #e7e3e3;
+    border-bottom: 1px solid #e7e3e3;
+    outline: 0; }
 
 /*# sourceMappingURL=styles.css.map */
