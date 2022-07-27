@@ -48,7 +48,9 @@ export default function TaskListContainer() {
 
     if (!list || !todos) {
         return (
-            <div className="ContentHeader">Loading...</div>
+            <div className="Loader">
+                <div className="ContentLoading"></div>
+            </div>
         );
     }
 
